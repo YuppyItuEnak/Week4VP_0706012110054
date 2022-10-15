@@ -36,7 +36,7 @@ class MovieDetailActivity : AppCompatActivity() {
         setContentView(bind.root)
 
         val movieId = intent.getIntExtra("movie.id", 0)
-        Toast.makeText(applicationContext, "Movie ID: ${movieId}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "MOVIE ID: ${movieId}", Toast.LENGTH_SHORT).show()
 
 
         viewModel = ViewModelProvider(this)[MoviesViewModel::class.java]
